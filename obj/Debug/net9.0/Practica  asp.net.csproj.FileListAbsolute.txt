@@ -1,0 +1,97 @@
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\bin\Debug\net9.0\appsettings.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\bin\Debug\net9.0\Practica  asp.net.staticwebassets.runtime.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\bin\Debug\net9.0\Practica  asp.net.staticwebassets.endpoints.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\bin\Debug\net9.0\Practica  asp.net.exe
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\bin\Debug\net9.0\Practica  asp.net.deps.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\bin\Debug\net9.0\Practica  asp.net.runtimeconfig.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\bin\Debug\net9.0\Practica  asp.net.dll
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\bin\Debug\net9.0\Practica  asp.net.pdb
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\Practica  asp.net.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\Practica  asp.net.AssemblyInfoInputs.cache
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\Practica  asp.net.AssemblyInfo.cs
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\Practica  asp.net.csproj.CoreCompileInputs.cache
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\Practica  asp.net.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\Practica  asp.net.RazorAssemblyInfo.cache
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\Practica  asp.net.RazorAssemblyInfo.cs
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\scopedcss\bundle\Practica  asp.net.styles.css
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\scopedcss\projectbundle\Practica  asp.net.bundle.scp.css
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\2rvmgv0ktf-b9sayid5wm.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\r4beifqaac-61n19gt1b8.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\mrxsnly415-xtxxf3hu2r.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\5kh388myqo-bqjiyaj88i.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\7reivztht0-c2jlpeoesf.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\fnztot2niw-erw9l3u2r3.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\1edc3us027-aexeepp0ev.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\zyh6unmpvg-d7shbmvgxk.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\vgv7t7kay2-ausgxo2sd3.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\q7r2uikmon-k8d9w2qqmf.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\9osfi8obiz-cosvhxvwiu.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\5kjib7c7jh-ub07r2b239.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\xhvojxuag8-fvhpjtyr6v.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\l7k0lj69bi-b7pk76d08c.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\6xw5x4g359-fsbi9cje9m.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\uvngyx0j1r-rzd6atqjts.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\52z6rdw1v1-ee0r1s7dh0.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\izmfvl7g0b-dxx9fxp4il.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\x3zqhpa787-jd9uben2k1.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\qinu36kiip-khv3u5hwcm.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\x2170dwicb-r4e9w2rdcm.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\jpi8xeo2ei-lcd1t2u6c8.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\94i0qhs69u-c2oey78nd0.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\b8vr0oqcdt-tdbxkamptv.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\sno625d4wf-j5mq2jizvt.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\rf24eyomq4-06098lyss8.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\vlvymm2piq-nvvlpmu67g.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\gu3b59bpce-s35ty4nyc5.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\fzlulfaqrr-pj5nd1wqec.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\w5byf6k5n8-46ein0sx1k.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\atveliggcr-v0zj4ognzu.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\by15ub9y8t-37tfw0ft22.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\6ihh1klzse-hrwsygsryq.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\j53jix5lsw-pk9g2wxc8p.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\5kr8bmuq4p-ft3s53vfgj.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\xjicnna6rx-6cfz1n2cew.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\e6wkk13me6-6pdc2jztkx.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\p7cyjqwy7w-493y06b0oq.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\lzltibraj4-iovd86k7lj.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\klmv9yfg6w-vr1egmr9el.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\xwjhsl1qsl-kbrnm935zg.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\49quuzawl6-jj8uyg4cgr.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\mkdbk3sjs1-y7v9cxd14o.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\p79qg5bg2b-notf2xhcfb.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\8uwi9s8h96-h1s4sie4z3.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\33835sm1va-63fj8s7r0e.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\ph2xrzv59r-0j3bgjxly4.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\7ca02fmp4d-47otxtyo56.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\qjiiijmw56-4v8eqarkd7.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\ukml0eb4j5-356vix0kms.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\hov0sinsit-83jwlth58m.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\l4okgx9d5s-mrlpezrjn3.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\mxosfdg5zy-lzl9nlhx6b.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\9k8w5oq7ly-ag7o75518u.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\2k62cn5uyn-x0q3zqp4vz.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\lw9pzb37a5-0i3buxo5is.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\zksk6xbry5-o1o13a6vjx.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\shxfl2h9fc-ttgo8qnofa.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\bn0dl4te4g-2z0ns9nrw6.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\9s5lf3hwlo-muycvpuwrr.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\9colc8fird-87fc7y1x7t.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\5ay2aljj19-mlv21k5csn.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\xnaeyfa0p8-1s9la8y7qj.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\compressed\bk1a4yff5z-1s9la8y7qj.gz
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\Practica  asp.net.dll
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\refint\Practica  asp.net.dll
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\Practica  asp.net.pdb
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\Practica  asp.net.genruntimeconfig.cache
+C:\Users\ladia\Desktop\Practicas\netcore\Practica  asp.net\Practica  asp.net\obj\Debug\net9.0\ref\Practica  asp.net.dll
