@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Practica__asp.net.Models.BaseDatos>
+
+<h1>Lista de Registros</h1>
+<p><a asp-action="Create" class="btn btn-primary">Crear Nuevo</a></p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nombre</td>
+                <td>@item.Descripcion</td>
+                <td>@item.FechaRegistro</td>
+            </tr>
+        }
+    </tbody>
+</table>

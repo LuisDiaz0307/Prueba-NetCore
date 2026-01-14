@@ -1,8 +1,91 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Laboratorio de Pruebas";
+    int hora = DateTime.Now.Hour;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    @if (hora < 12)
+    {
+        <h1 class="text-warning">¡Buenos días, Luis! ☀️</h1>
+    }
+    else
+    {
+        if (hora >= 12 && hora < 17)
+        {
+            <h1 class="text-primary">¡Buenas tardes, Luis! 🌤️</h1>
+        }
+        else
+        {
+            <h1 class="text-primary">¡Buenas noches, Luis! 🌙</h1>
+        }
+
+    }
+
+    <p>Son las @DateTime.Now.ToString("hh:mm tt")</p>
+</div>
+
+<hr />
+<h3>Canales:</h3>
+<div class="list-group">
+    @for (int i = 1; i <= 6; i++)
+    {
+        if (i % 2 == 0)
+        {
+            <button type="button" class="list-group-item list-group-item-action">
+                Canal #@i - <span class="text-success">Disponible</span>
+            </button>
+        }
+        else
+        {
+            <button type="button" class="list-group-item list-group-item-action">
+                Canal #@i - <span class="text-danger">No Disponible</span>
+            </button>
+        }
+
+    }
+</div>
+
+@{
+    var servicios = new List<string> { "Voz IP", "Internet", "Seguridad", "Soporte", "Nube", "Sabritas", "sabritas" };
+}
+
+<div class="row mt-4">
+    @foreach (var item in servicios)
+    {
+        string colorClase = "";
+        string icono = "";
+
+        // El switch evalúa el valor exacto de 'item'
+        switch (item)
+        {
+            case "Voz IP":
+                colorClase = "bg-primary";
+                icono = "📞";
+                break;
+            case "Internet":
+                colorClase = "bg-success";
+                icono = "🌐";
+                break;
+            case "Seguridad":
+                colorClase = "bg-danger";
+                icono = "🛡️";
+                break;
+            case "Sabritas":
+                colorClase = "bg-warning";
+                icono = "/";
+                break;
+            default: // Si no coincide con ninguno de los anteriores
+                colorClase = "bg-secondary";
+                icono = "⚙️";
+                break;
+        }
+        //Si no es el texto exacto no lo considerara dentro de switch no lo tomara en cuenta, nota para mi
+        <div class="col-md-4 mb-3">
+            <div class="card @colorClase text-white">
+                <div class="card-body text-center">
+                    <h5 class="card-title">@icono @item</h5>
+                </div>
+            </div>
+        </div>
+    }
 </div>

@@ -1,4 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Practica__asp.net.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// --- CONFIGURACIÓN DE LA BASE DE DATOS ---
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlite("Data Source=MiBaseDeDatos.db"));
+// -----------------------------------------
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
