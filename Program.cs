@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Practica__asp.net.Data;
+using Practica__asp.net.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +34,14 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
+
+
+//
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    SeedData.Initialize(services);
+}
 
 
 app.Run();
