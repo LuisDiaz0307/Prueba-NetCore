@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Practica__asp.net.Models;
+using Practica_asp.net.Models;
 
-namespace Practica__asp.net.Controllers
+namespace Practica_asp.net.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,4 +1,4 @@
-namespace Practica__asp.net.Models
+namespace Practica_asp.net.Models
 {
     public class ErrorViewModel
     {

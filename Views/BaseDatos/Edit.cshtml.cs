@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Practica__asp.net.Views.BaseDatos
+namespace Practica_asp.net.Views.BaseDatos
 {
     public class EditModel : PageModel
     {

@@ -1,0 +1,35 @@
+﻿@model Practica_asp.net.Models.Usuario
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow border-0">
+                <div class="card-body p-4">
+                    <h2 class="text-center mb-4">Registrarse</h2>
+                    <form asp-action="Create">
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input asp-for="Name" class="form-control" placeholder="Tu nombre" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Correo</label>
+                            <input asp-for="Correo" class="form-control" type="email" placeholder="correo@ejemplo.com" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Fecha de Nacimiento</label>
+                            <input asp-for="FechaNacimiento" class="form-control" type="date" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Contraseña</label>
+                            <input asp-for="Clave" class="form-control" type="password" />
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mb-2">Crear Cuenta</button>
+                        <a asp-controller="Login" asp-action="Index" class="btn btn-link w-100 text-decoration-none">Volver al Login</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@{
+}

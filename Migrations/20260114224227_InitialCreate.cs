@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Practica__asp.net.Migrations
+namespace Practica_asp.net.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

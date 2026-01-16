@@ -1,0 +1,41 @@
+﻿@page
+@model Practica_asp.net.Views.Login.IndexModel
+@{
+}
+
+<div class="bg-light border border-dark p-3"    >Hola este es mi login</div>
+<div>Este es otro div</div>
+
+
+@* La clase 'container' centra el contenido horizontalmente y le da márgenes a los lados *@
+<div class="container mt-5">
+
+    @* 'row' crea una fila y 'justify-content-center' centra las columnas que estén dentro *@
+    <div class="row justify-content-center">
+
+        @* 'col-md-6' define que el contenedor ocupará la mitad de la pantalla (6 de 12 unidades) *@
+        <div class="col-md-6 border p-4 shadow-sm rounded bg-white">
+
+            <h2 class="text-center mb-4">Iniciar Sesión</h2>
+
+            <div class="mb-3">
+                <label class="form-label">Usuario:</label>
+                <input type="text" class="form-control" placeholder="Escribe tu usuario aquí">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" placeholder="********">
+            </div>
+
+            <button class="btn btn-primary w-100 mb-3">Ingresar</button>
+            <a asp-controller="Usuarios" asp-action="Create" class="btn btn-dark w-100">
+                Registrar
+            </a>
+
+        </div>
+
+        
+
+    </div>
+</div>

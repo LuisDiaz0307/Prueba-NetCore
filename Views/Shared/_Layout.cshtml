@@ -3,17 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Practica__asp.net</title>
-    <script type="importmap"></script>
+    <title>@ViewData["Title"] - Practica_asp.net</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Practica__asp.net.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Practica_asp.net.styles.css" asp-append-version="true" />
 </head>
-<body>
+@* 1. El body debe ser flex-column y ocupar el 100% de la altura visible (min-vh-100) *@
+<body class="d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Practica__asp.net</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Practica_asp.net</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,22 +29,32 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="BaseDatos" asp-action="Index">Base de Datos</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - Practica__asp.net - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    @* 2. El elemento <main> debe tener flex-grow-1 para empujar al footer hacia abajo *@
+    <main role="main" class="flex-grow-1 d-flex align-items-center">
+        <div class="container pb-3">
+            @RenderBody()
+        </div>
+    </main>
+
+    @* 3. El footer ahora siempre estará al final si hay poco contenido *@
+    <footer class="border-top footer text-muted bg-light p-3">
+        <div class="container text-center">
+            &copy; 2026 - Practica .NET 9
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

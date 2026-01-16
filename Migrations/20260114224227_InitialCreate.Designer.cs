@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Practica__asp.net.Data;
+using Practica_asp.net.Data;
 
 #nullable disable
 
-namespace Practica__asp.net.Migrations
+namespace Practica_asp.net.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20260114224227_InitialCreate")]
@@ -20,7 +20,7 @@ namespace Practica__asp.net.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
 
-            modelBuilder.Entity("Practica__asp.net.Models.BaseDatos", b =>
+            modelBuilder.Entity("Practica_asp.net.Models.BaseDatos", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

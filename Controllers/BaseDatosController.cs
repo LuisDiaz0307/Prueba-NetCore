@@ -1,31 +1,61 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Practica__asp.net.Data;
-using Practica__asp.net.Models;
+using Practica_asp.net.Data;
+using Practica_asp.net.Models;
 
-namespace Practica__asp.net.Controllers
+namespace Practica_asp.net.Controllers
 {
-    public class BaseDatosController : Controller
+    public class UsuariosController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public BaseDatosController(ApplicationDbContext context)
+        public UsuariosController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-
-
-        // Pantalla para crear (GET)
-        public IActionResult Create()
+        // GET: Usuarios/Index
+        public async Task<IActionResult> Index(string buscar, int pagina = 1)
         {
-            return View();
+            int registrosPorPagina = 10;
+
+            // 1. Preparamos la consulta
+            var consulta = from u in _context.Usuarios select u;
+
+            // 2. Filtramos con EF.Functions (Optimizado)
+            if (!string.IsNullOrEmpty(buscar))
+            {
+                string termino = $"%{buscar}%";
+                consulta = consulta.Where(u =>
+                    EF.Functions.Like(u.Name, termino) ||
+                    EF.Functions.Like(u.Correo, termino));
+            }
+
+            // 3. Ordenamos (Por ID descendente como en BaseDatos o por Nombre)
+            consulta = consulta.OrderByDescending(u => u.Id);
+
+            // 4. Lógica de Paginación
+            int totalRegistros = await consulta.CountAsync();
+
+            var resultados = await consulta
+                .Skip((pagina - 1) * registrosPorPagina)
+                .Take(registrosPorPagina)
+                .ToListAsync();
+
+            // 5. Variables para la vista
+            ViewBag.TotalPaginas = (int)Math.Ceiling((double)totalRegistros / registrosPorPagina);
+            ViewBag.PaginaActual = pagina;
+            ViewBag.Buscar = buscar; // Usamos ViewBag.Buscar para la vista que diseñamos
+
+            return View(resultados);
         }
 
-        // Guardar el registro (POST)
+        // --- CREAR ---
+        public IActionResult Create() => View();
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(BaseDatos modelo)
+        public async Task<IActionResult> Create(Usuario modelo)
         {
             if (ModelState.IsValid)
             {
@@ -36,20 +66,18 @@ namespace Practica__asp.net.Controllers
             return View(modelo);
         }
 
-
-        // --- EDITAR (GET): Busca el registro y muestra el formulario ---
+        // --- EDITAR ---
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
-            var servicio = await _context.Servicios.FindAsync(id);
-            if (servicio == null) return NotFound();
-            return View(servicio);
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario == null) return NotFound();
+            return View(usuario);
         }
 
-        // --- EDITAR (POST): Guarda los cambios ---
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, BaseDatos modelo)
+        public async Task<IActionResult> Edit(int id, Usuario modelo)
         {
             if (id != modelo.Id) return NotFound();
             if (ModelState.IsValid)
@@ -61,70 +89,15 @@ namespace Practica__asp.net.Controllers
             return View(modelo);
         }
 
-        // --- ELIMINAR (GET): Pregunta si estás seguro ---
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null) return NotFound();
-            var servicio = await _context.Servicios.FirstOrDefaultAsync(m => m.Id == id);
-            if (servicio == null) return NotFound();
-            return View(servicio);
-        }
-
-        // --- ELIMINAR (POST): Borra el registro definitivamente ---
+        // --- ELIMINAR ---
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var servicio = await _context.Servicios.FindAsync(id);
-            if (servicio != null) _context.Servicios.Remove(servicio);
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario != null) _context.Usuarios.Remove(usuario);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
-
-        // GET: BaseDatos
-        public async Task<IActionResult> Index(string buscar, int pagina = 1)
-        {
-            // Definimos cuántos registros queremos por página
-            int registrosPorPagina = 10;
-
-            // 1. Preparamos la consulta (LINQ to Entities)
-            var consulta = from s in _context.Servicios select s;
-
-            // 2. Filtramos (Tu ruta eficiente y profesional con EF.Functions)
-            if (!string.IsNullOrEmpty(buscar))
-            {
-                string termino = $"%{buscar}%";
-                consulta = consulta.Where(s =>
-                    EF.Functions.Like(s.Nombre, termino) ||
-                    EF.Functions.Like(s.Descripcion, termino));
-            }
-
-            // 3. Ordenamos
-            consulta = consulta.OrderByDescending(s => s.Id);
-
-            // --- NUEVA LÓGICA DE PAGINACIÓN ---
-
-            // Contamos el total de registros filtrados (necesario para saber cuántas páginas habrá)
-            int totalRegistros = await consulta.CountAsync();
-
-            // Ejecutamos la consulta final aplicando el "salto" y el "límite"
-            var resultados = await consulta
-                .Skip((pagina - 1) * registrosPorPagina)
-                .Take(registrosPorPagina)
-                .ToListAsync();
-
-            // Calculamos el total de páginas (ej. 30 registros / 10 = 3 páginas)
-            ViewBag.TotalPaginas = (int)Math.Ceiling((double)totalRegistros / registrosPorPagina);
-            ViewBag.PaginaActual = pagina;
-            ViewData["FiltroActual"] = buscar;
-
-            // 4. Enviamos solo los 10 resultados de la página actual a la vista
-            return View(resultados);
-        }
-
-
-
-
     }
 }

@@ -1,22 +1,23 @@
-﻿@model IEnumerable<Practica__asp.net.Models.BaseDatos>
+﻿@model IEnumerable<Practica_asp.net.Models.Usuario>
 
 <div class="container mt-4">
-    <h1>Lista de Servicios</h1>
+    <h1>Listado de Usuarios</h1>
 
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
+        <a asp-action="Create" class="btn btn-primary">Crear Nuevo Usuario</a>
         <span class="badge bg-info text-dark">
-            Mostrando @Model.Count() registros
+            Mostrando @Model.Count() registros en esta página
         </span>
     </div>
 
+    @* Card del Buscador *@
     <div class="card mb-4 shadow-sm">
         <div class="card-body">
             <form asp-action="Index" method="get" class="d-flex gap-3 w-100">
-
                 <div class="flex-grow-1">
-                    <input type="text" name="buscar" value="@ViewData["FiltroActual"]"
-                           class="form-control" placeholder="Buscar por nombre o descripción..." />
+                    @* Usamos ViewBag.Buscar que es lo que definimos en el controlador *@
+                    <input type="text" name="buscar" value="@ViewBag.Buscar"
+                           class="form-control" placeholder="Buscar por nombre o correo..." />
                 </div>
 
                 <div class="d-flex gap-2">
@@ -32,45 +33,62 @@
             <thead class="table-light">
                 <tr>
                     <th>Nombre</th>
-                    <th>Descripción</th>
+                    <th>Correo</th>
+                    <th>Fecha de Nacimiento</th>
                     <th class="text-center">Acciones</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var item in Model)
+                @if (Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="fw-bold">@item.Name</td>
+                            <td>@item.Correo</td>
+                            <td>@item.FechaNacimiento.ToShortDateString()</td>
+                            <td class="text-center">
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Editar</a>
+
+                                    @* Borrado seguro con POST y confirmación *@
+                                    <form asp-action="Delete" asp-route-id="@item.Id" method="post"
+                                          onsubmit="return confirm('¿Eliminar a @item.Name?');" style="margin:0;">
+                                        <button type="submit" class="btn btn-sm btn-danger">Borrar</button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
                 {
                     <tr>
-                        <td class="fw-bold">@item.Nombre</td>
-                        <td>@item.Descripcion</td>
-                        <td class="text-center">
-                            <div class="d-flex justify-content-center gap-2">
-                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Editar</a>
-                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Borrar</a>
-                            </div>
-                        </td>
+                        <td colspan="4" class="text-center text-muted py-4">No se encontraron resultados.</td>
                     </tr>
                 }
             </tbody>
         </table>
     </div>
 
+    @* Paginación Numérica *@
     @if (ViewBag.TotalPaginas > 1)
     {
         <nav class="mt-4">
             <ul class="pagination justify-content-center">
                 <li class="page-item @(ViewBag.PaginaActual == 1 ? "disabled" : "")">
-                    <a class="page-link" asp-action="Index" asp-route-pagina="@(ViewBag.PaginaActual - 1)" asp-route-buscar="@ViewData["FiltroActual"]">Anterior</a>
+                    <a class="page-link" asp-action="Index" asp-route-pagina="@(ViewBag.PaginaActual - 1)" asp-route-buscar="@ViewBag.Buscar">Anterior</a>
                 </li>
 
                 @for (int i = 1; i <= ViewBag.TotalPaginas; i++)
                 {
                     <li class="page-item @(i == ViewBag.PaginaActual ? "active" : "")">
-                        <a class="page-link" asp-action="Index" asp-route-pagina="@i" asp-route-buscar="@ViewData["FiltroActual"]">@i</a>
+                        <a class="page-link" asp-action="Index" asp-route-pagina="@i" asp-route-buscar="@ViewBag.Buscar">@i</a>
                     </li>
                 }
 
                 <li class="page-item @(ViewBag.PaginaActual == ViewBag.TotalPaginas ? "disabled" : "")">
-                    <a class="page-link" asp-action="Index" asp-route-pagina="@(ViewBag.PaginaActual + 1)" asp-route-buscar="@ViewData["FiltroActual"]">Siguiente</a>
+                    <a class="page-link" asp-action="Index" asp-route-pagina="@(ViewBag.PaginaActual + 1)" asp-route-buscar="@ViewBag.Buscar">Siguiente</a>
                 </li>
             </ul>
         </nav>

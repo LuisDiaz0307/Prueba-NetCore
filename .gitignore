@@ -1,5 +1,10 @@
+# Carpetas de Visual Studio
+.vs/
 [Bb]in/
-[Oo]bj/
-*.db
-*.db-shm
-*.db-wal
+[Ob]j/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de publicación
+publish/

@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using Practica__asp.net.Data;
-using Practica__asp.net.Models;
+using Practica_asp.net.Data;
+using Practica_asp.net.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +12,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 
 var app = builder.Build();
 

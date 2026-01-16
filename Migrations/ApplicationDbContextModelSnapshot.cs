@@ -3,11 +3,11 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Practica__asp.net.Data;
+using Practica_asp.net.Data;
 
 #nullable disable
 
-namespace Practica__asp.net.Migrations
+namespace Practica_asp.net.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -17,7 +17,7 @@ namespace Practica__asp.net.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
 
-            modelBuilder.Entity("Practica__asp.net.Models.BaseDatos", b =>
+            modelBuilder.Entity("Practica_asp.net.Models.BaseDatos", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -37,6 +37,32 @@ namespace Practica__asp.net.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Servicios");
+                });
+
+            modelBuilder.Entity("Practica_asp.net.Models.Usuario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Clave")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Correo")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateOnly>("FechaNacimiento")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Usuarios");
                 });
 #pragma warning restore 612, 618
         }
